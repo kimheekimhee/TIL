@@ -1,23 +1,23 @@
 # Git
 
-git init
+`$ git init`
 
-git add .
+`$ git add`
 
-git commit -m 'abc'
+`$ git commit -m 'abc'`
 
-git status
+`$ git status`
 
-git log
+`$ git log`
 
 
 
-git remote -v
+`$ git remote -v`
 
-git remote add 'repositories' 'URL'
+`$ git remote add 'repositories' 'URL'`
 
-git remote rm 'repositories'
+`$ git remote rm 'repositories'`
 
-git push .
+`$ git push`
 
-git pull .
+`$ git pull`
