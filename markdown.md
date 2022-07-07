@@ -1,6 +1,6 @@
 # MARKDOWN
 
-Markdown
+
 
 ## heading
 
@@ -19,7 +19,7 @@ ul
 
 ## fenced code block
 
-`3
+<```>
 
 ```python
 hello world
@@ -29,27 +29,27 @@ hello world
 
 ## inline code block
 
-`1
+<`>
 
 ` hello world `
 
 ## link
 
-[abc](def)
+```[abc](def)```
 
 ## image
 
-![abc](def)
+```![abc](def)```
 
 ## blockquotes
 
-'>'
+```>```
 
 > abc
 
 ## text
 
-*1, *2
+```*```,  ```**```
 
 *1*
 
