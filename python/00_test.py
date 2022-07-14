@@ -5,10 +5,3 @@ print('My name is python')
 
 lunch_list = ['돈까스', '김치찌개', '삼겹살', '햄버거', '카레']
 print (lunch_list[0])
-
-
-++++++++++++++++++++++++++++++++++++
-
-word = 'hello'
-    for char in word:
-        print(char)
