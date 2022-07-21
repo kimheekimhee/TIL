@@ -1,5 +1,5 @@
-# import sys
-# sys.stdin = open('SWEA_1933_input.txt', 'r')
+import sys
+sys.stdin = open('SWEA_1933_input.txt', 'r')
 
 number = int(input())
 
