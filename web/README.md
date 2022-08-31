@@ -174,7 +174,7 @@ HTML의 요소는 태그와 내용으로 구성되어있따
 
 ```html
 <!DOCTYPE html>
-CSS 정의 방법 1 (인라인, 해당 태그에 직접 style 속성을 활용)
+<!-- CSS 정의 방법 1 (인라인, 해당 태그에 직접 style 속성을 활용) -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -188,7 +188,7 @@ CSS 정의 방법 1 (인라인, 해당 태그에 직접 style 속성을 활용)
 ```
 
 ```html
-CSS 정의 방법 2 (내부 참조, <head>태그 내에 <style>에 지정)
+<!-- CSS 정의 방법 2 내부 참조, <head>태그 내에 <style>에 지정 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -206,7 +206,7 @@ CSS 정의 방법 2 (내부 참조, <head>태그 내에 <style>에 지정)
 ```
 
 ```html
-CSS 정의 방법 3 (외부 참조, 외부 CSS 파일을 <head>내<link>를 통해 불러오기)
+<!-- CSS 정의 방법 3 (외부 참조, 외부 CSS 파일을 <head>내<link>를 통해 불러오기) -->
 <html lang="en">
 <head>
     <title>mySite</title>
