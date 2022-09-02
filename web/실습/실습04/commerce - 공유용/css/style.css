@@ -26,6 +26,8 @@ body {
 
 .nav-link {
   text-decoration: none;
+  font-size: large;
+  font-weight: bold;
 }
 
 .nav-link:visited {
@@ -47,4 +49,48 @@ body {
   background-size: cover;
   width: 100%;
   height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannertitle {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.banner:hover {
+  color: black;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.about-img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about {
+  display: flex;
+  margin: 3rem;
+}
+
+.about-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem;
+}
+
+.about-title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
 }
