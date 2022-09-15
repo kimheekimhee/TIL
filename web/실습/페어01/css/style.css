@@ -1,0 +1,125 @@
+.item{
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  height: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center
+}
+
+.item-list{
+  display: flex;
+  list-style: none;
+}
+
+.nav-item{
+  margin: 10px;
+}
+.abc:hover {
+  color: salmon;
+  background-color: white;
+}
+
+.abc:visited {
+  color: black;
+}
+
+.abc:visited:hover {
+  color: red;
+}
+
+.logo-img{
+  height: 60px;
+}
+
+.banner {
+  margin-top: 80px;
+  background-image: url(../images/background.jpg);
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 320px;
+  align-items: center;
+}
+
+.genreandmovie {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+.genre-container {
+  width: 20%;
+
+}
+.genre-container h2 {
+  padding: 1rem 1rem 0 1rem;
+}
+.genre-list {
+  padding: 1rem;
+}
+.genre {
+  list-style: none;
+}
+.movie{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background-color: azure;
+}
+.title-section{
+  width: 100%;
+  text-align: center;
+  padding: .5rem;
+}
+
+.img-list{
+  display: flex;
+  padding: auto;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.card{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+}
+.card:hover {
+  transform: scale(1.4);
+}
+.card-img{
+  width: 300px;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px gray;
+}
+.content{
+  width: 100%;
+  text-align: center;
+  padding: .5rem;
+  font-size: large;
+  font-weight: bold;
+}
+.footer {
+  background-color: black;
+  color: white;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
