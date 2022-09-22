@@ -1,0 +1,9 @@
+git clone https://github.com/rhello/hello.git
+git checkout issue-10
+git add hello.txt
+git commit -m 'closed'
+git branch
+master
+git merge issue-10
+git push origin master
+git branch -d issue-10
