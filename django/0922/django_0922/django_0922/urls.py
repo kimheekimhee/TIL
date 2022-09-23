@@ -24,5 +24,6 @@ urlpatterns = [
     # URL, 실행 할 view 함수
     path('index/', views.index),
     path('template/', views.template),
-    path('today-dinner', views.dinner),
+    path('today-dinner/', views.dinner),
+    path('lotto/', views.lotto)
 ]

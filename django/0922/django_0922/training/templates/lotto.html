@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Document</title>
 </head>
 <body>
-    hello, world!
+    <h1>lotto</h1>
+    {% for lotto in lotto_list %}
+        {% for numer in lotto %}
+            <span>{{ number }}</span>
+        {% endfor %}
+        <br>
+    {% endfor %}
+    {{ lotto }}
 </body>
 </html>
