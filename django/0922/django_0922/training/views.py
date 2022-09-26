@@ -17,7 +17,7 @@ def template(request):
 def dinner(request):
     dinner_list = [
         {"name": "살치살", "src": "https://t1.daumcdn.net/cfile/tistory/2229D04B5456209E28"},
-        {"name": "등심", "src": "https://cdn.banhanu.com/images/1000000065_1.jpg"}
+        {"name": "등심", "src": "https://cdn.banhanu.com/images/1000000065_1.jpg"},
     ]
 
     context = {
@@ -26,10 +26,13 @@ def dinner(request):
     return render(request, "dinner.html", context)
 
 def lotto(request):
-    random.sample(range[1, 46], 6)
-    lotto_list.append(lotto)
+    
+    lotto_list = []
+    for _ in range(5):
+        lotto = random.sample(range(1, 46), 6)
+        lotto_list.append(lotto)
     context = {
-        "lotto" == lotto,
+        "lotto_list" : lotto_list,
     }
 
-    return render(request, "lotto.html")
+    return render(request, "lotto.html", context)

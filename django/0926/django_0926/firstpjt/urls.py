@@ -1,4 +1,4 @@
-"""django_0922 URL Configuration
+"""firstpjt URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
@@ -15,15 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
-# app[training]/views.py 불러오기
-from training import views
+from form import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # URL, 실행 할 view 함수
     path('index/', views.index),
-    path('template/', views.template),
-    path('today-dinner/', views.dinner),
-    path('lotto/', views.lotto),
+    path('ping/', views.ping),
+    path('pong/', views.pong),
 ]
