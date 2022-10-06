@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>상세보기</h1>
+  <h2>제목 :
+    {{ articles.title }}</h2>
+  <p>내용 :
+    {{ articles.content }}</p>
+  <a href="{% url 'articles:index' %}">목록</a>
+{% endblock %}

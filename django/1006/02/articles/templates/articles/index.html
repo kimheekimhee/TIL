@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <div class="text-center">
+      <h1 class="my-5">게시판</h1>
+    </div>
+    <div class="text-center">
+      {% for article in articles %}
+        <p>
+          <a class="btn btn-dark" href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
+          <a class="btn btn-warning" href="{% url 'articles:update' article.pk %}">수정</a>
+          <a class="btn btn-danger" href="{% url 'articles:delete' article.pk %}">삭제</a>
+        </p>
+      {% endfor %}
+    </div>
+    <div class="text-end">
+      <a class="btn btn-primary" href="{% url 'articles:create' %}">글쓰기</a>
+    </div>
+  </div>
+{% endblock %}
