@@ -2,6 +2,8 @@ import sys
 
 sys.stdin = open("BOJ_10872.txt", "r")
 
+n = int(input())
+
 
 def factorial(n):
     result = 1
@@ -10,5 +12,4 @@ def factorial(n):
     return result
 
 
-n = int(input())
 print(factorial(n))
