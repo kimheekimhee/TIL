@@ -4,6 +4,8 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as auth_login
 from django.contrib.auth import logout as auth_logout
+from .forms import CustomUserChangeForm
+from django.contrib.auth.decorators import login_required
 
 
 def index(request):
@@ -41,9 +43,7 @@ def login(request):
                 return redirect("accounts:index")
         else:
             form = AuthenticationForm()
-        context = {
-            "form": form,
-        }
+        context = {"form": form}
         return render(request, "accounts/login.html", context)
     else:
         return redirect("accounts:index")
@@ -51,4 +51,17 @@ def login(request):
 
 def logout(request):
     auth_logout(request)
-    return redirect("index")
+    return redirect("accounts:index")
+
+
+@login_required
+def update(request):
+    if request.method == "POST":
+        form = CustomUserChangeForm(request.POST, instance=request.user)
+        if form.is_valid():
+            form.save()
+            return redirect("accounts:detail", request.user.pk)
+    else:
+        form = CustomUserChangeForm(instance=request.user)
+    context = {"form": form}
+    return render(request, "accounts/update.html", context)
