@@ -1,5 +1,6 @@
 import sys
-sys.stdin = open('BOJ_2558_input.txt', 'r')
+
+sys.stdin = open("BOJ_2558.txt", "r")
 
 a = int(input())
 b = int(input())
