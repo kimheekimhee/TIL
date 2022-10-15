@@ -2,15 +2,40 @@ import sys
 
 sys.stdin = open("BOJ_5622.txt", "r")
 
-dial = ["ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"]
+dict_ = {
+    "A": 3,
+    "B": 3,
+    "C": 3,
+    "D": 4,
+    "E": 4,
+    "F": 4,
+    "G": 5,
+    "H": 5,
+    "I": 5,
+    "J": 6,
+    "K": 6,
+    "L": 6,
+    "M": 7,
+    "N": 7,
+    "O": 7,
+    "P": 8,
+    "Q": 8,
+    "R": 8,
+    "S": 8,
+    "T": 9,
+    "U": 9,
+    "V": 9,
+    "W": 10,
+    "X": 10,
+    "Y": 10,
+    "Z": 10,
+}
+
 word = input()
-time = 0
-# print(len(dial)) << 8
-for i in range(len(dial)):
-    # print(i) << 0 1 2 3 4 5 6 7
-    for w in word:
-        # print(w) << W A 8번 출력
-        # print(dial[i]) << ABC ABC DEF DEF ...
-        if w in dial[i]:
-            time += 3 + i  # 0 == 3, 1 == 4 ...
-print(time)  # W = 10, A =3
+list_ = []
+# print(dict_["W"])
+for i in word:
+    list_.append(dict_[i])
+# print(list_)
+result = sum(list_)
+print(result)
