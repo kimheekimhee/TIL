@@ -2,18 +2,16 @@ import sys
 
 sys.stdin = open("BOJ_1157.txt", "r")
 
+word = input().upper()
+unique = list(set(word))
+cnt = []
 
-word = input()
-# print(word)
-list_word = []
+for i in unique:
+    count_word = word.count(i)
+    cnt.append(count_word)
 
-for char in word:
-    list_word.append(char)
-# print(list_word)
-max_char = max(list_word)
-
-print(max_char)
-
-max_char_count = list_word.count(max_char)
-
-print(max_char_count)
+if cnt.count(max(cnt)) > 1:
+    print("?")
+else:
+    max = cnt.index(max(cnt))
+    print(unique[max])
