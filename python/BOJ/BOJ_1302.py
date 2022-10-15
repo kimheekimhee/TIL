@@ -2,8 +2,22 @@ import sys
 
 sys.stdin = open("BOJ_1302.txt", "r")
 
-N = int(input())
+n = int(input())
+books = {}
 
-for i in range(1, N + 1):
-    book_name = input()
-    print(book_name)
+for _ in range(n):
+    book = input()
+    if book not in books:
+        books[book] = 1
+    else:
+        books[book] += 1
+
+max_freq = max(books.values())
+
+best_seller = []
+
+for book, number in books.items():
+    if number == max_freq:
+        best_seller.append(book)
+
+print(sorted(best_seller)[0])
