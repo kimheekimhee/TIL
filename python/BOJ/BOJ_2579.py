@@ -2,8 +2,6 @@ import sys
 
 sys.stdin = open("BOJ_2579.txt", "r")
 
-import sys
-
 input = sys.stdin.readline
 arr = []
 dp = []
