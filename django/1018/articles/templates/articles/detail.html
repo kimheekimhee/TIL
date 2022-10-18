@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <a href="{% url 'articles:index' %}">back</a>
+  <h1>No.{{ article.pk }}</h1>
+  <h3>{{ article.title }}</h3>
+  <p>{{ article.content }}</p>
+  <p>{{ comment_form }}</p>
+
+{% endblock %}
