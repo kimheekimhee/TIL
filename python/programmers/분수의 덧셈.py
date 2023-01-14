@@ -1,17 +1,14 @@
-def solution(numer1, denom1, numer2, denom2):
-    # 1. 두 분수의 합 계산
-    numer = denom1 * denom2
-    denom = numer1 * denom2 + numer2 * denom1
-    
-    # 2. 최대공약수 계산
-    start = max(denom, numer)
-    GCD = 0
-    
-    for num in range(start, 0, -1):
-        if denom % num == 0 and numer % num == 0:
-            GCD = num
-            break
-    
-    # 3. gcd 로 나눈 값을 answer에 담기
-    answer = [denom / GCD, numer / GCD]
-    return answer
+import math
+
+def LCM(n1, n2): #최소공배수
+    temp = math.gcd(n1, n2)
+    return n1*n2/temp
+
+def solution(denum1, num1, denum2, num2):
+    top = denum1*num2 + denum2*num1
+    bottom = num1*num2
+    n = math.gcd(top, bottom)
+    if n == 1:
+        return [top, bottom]
+    else:
+        return [top/n, bottom/n]
