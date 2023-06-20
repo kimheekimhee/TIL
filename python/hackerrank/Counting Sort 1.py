@@ -15,14 +15,14 @@ import sys
 
 def countingSort(arr):
     # Write your code here
-    arr = sorted(arr)
-    # print(arr)
-    cnt_arr = []
-    for i in range(n):
-        # print(arr.count(i))
-        # cnt_arr += arr.count(i)
-        cnt_arr.append(arr.count(i))
-    return cnt_arr
+    # Create a frequency array to count the occurrences of each element
+    freq = [0] * 100
+
+    # Count the occurrences of each element in the input array
+    for num in arr:
+        freq[num] += 1
+
+    return freq
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
