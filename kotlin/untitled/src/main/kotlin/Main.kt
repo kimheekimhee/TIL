@@ -17,4 +17,12 @@ fun main(args: Array<String>) {
     val b = readLine()!!.toInt() // input_2
     println(a + b)
 
+    val n: Int = 100
+    val str: String = "Hello!"
+
+    println(n)
+    println(str)
+
+    // val n: Int = "Hello!" // Error
+
 }
