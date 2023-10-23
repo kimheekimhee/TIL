@@ -4,16 +4,22 @@ package org.example;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("public class Main, public static void main");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // Public 클래스 사용 예제
+        PublicExample pubExample = new PublicExample();
+        pubExample.showPublicName();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        // Protected 클래스 사용 예제
+        ProtectedExample protExample = new ProtectedExample();
+        protExample.showProtectedName();
+
+        // Default 클래스 사용 예제
+        DefaultExample defExample = new DefaultExample();
+        defExample.showDefaultName();
+
+        // Private 클래스 사용 예제
+        PrivateExample privExample = new PrivateExample();
+        privExample.displayPrivateName();
     }
 }
