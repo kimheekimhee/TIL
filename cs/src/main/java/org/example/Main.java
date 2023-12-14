@@ -1,4 +1,15 @@
-public class ArrayRotation {
+package org.example;
+
+public class Main {
+
+    // 메인 메소드
+    public static void main(String[] args) {
+        int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
+        int n = arr.length;
+
+        leftRotate(arr, 2, n);
+        printArray(arr, n);
+    }
 
     // 배열을 왼쪽으로 한 칸 회전시키는 메소드
     static void leftRotateByOne(int arr[], int n) {
@@ -22,14 +33,5 @@ public class ArrayRotation {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
-    }
-
-    // 메인 메소드
-    public static void main(String[] args) {
-        int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
-        int n = arr.length;
-
-        leftRotate(arr, 2, n);
-        printArray(arr, n);
     }
 }
