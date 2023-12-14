@@ -38,7 +38,7 @@ public class juggling_array {
         System.out.println();
     }
 
-    // 회전 테스트를 위한 메인 메서드
+    // 테스트를 위한 메인 메서드
     public static void main(String[] args) {
         int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
         int n = arr.length;
