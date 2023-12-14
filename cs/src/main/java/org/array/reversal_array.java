@@ -1,4 +1,4 @@
-package org.example;
+package org.array;
 
 public class reversal_array {
 
