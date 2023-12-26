@@ -1,6 +1,6 @@
 package org.Array;
 
-public class Juggling_array {
+public class Juggling_Array {
 
     // 최대공약수 구하는 함수
     public static int gcd(int a, int b) {

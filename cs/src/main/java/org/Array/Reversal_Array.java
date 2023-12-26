@@ -1,6 +1,6 @@
 package org.Array;
 
-public class Reversal_array {
+public class Reversal_Array {
 
     // 배열의 일부분을 역전시키는 메소드
     public static void reverseArr(int arr[], int start, int end) {
