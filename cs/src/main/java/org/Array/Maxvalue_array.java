@@ -1,6 +1,6 @@
-package org.array;
+package org.Array;
 
-public class maxvalue_array {
+public class Maxvalue_array {
 
     // 배열에서 회전을 해서 i*arr[i]의 합이 최대가 될 때의 값을 계산하는 메소드
     public static int maxVal(int arr[], int n) {

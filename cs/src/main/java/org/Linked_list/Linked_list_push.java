@@ -1,6 +1,6 @@
-package org.linked_list;
+package org.Linked_list;
 
-class linked_list_push
+class Linked_list_push
 {
     Node head;
 
@@ -67,7 +67,7 @@ class linked_list_push
 
     public static void main(String[] args)
     {
-        linked_list_push llist = new linked_list_push();
+        Linked_list_push llist = new Linked_list_push();
 
         //6->NUllist
         llist.append(6);

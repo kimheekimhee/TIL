@@ -1,6 +1,6 @@
-package org.array;
+package org.Array;
 
-public class gcd {
+public class GCD {
 
     // 최대공약수 구하는 함수
     public static int gcd(int a, int b) {

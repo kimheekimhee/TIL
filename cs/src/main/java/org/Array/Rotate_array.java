@@ -1,6 +1,6 @@
-package org.array;
+package org.Array;
 
-public class rotate_array {
+public class Rotate_array {
 
     // 배열을 왼쪽으로 한 칸 회전시키는 메소드
     static void leftRotateByOne(int arr[], int n) {

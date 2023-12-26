@@ -1,6 +1,6 @@
-package org.array;
+package org.Array;
 
-public class rearrange_array {
+public class Rearrange_array {
     public static void fix(int[] A) {
         int len = A.length;
 

@@ -1,6 +1,6 @@
-package org.linked_list;
+package org.Linked_list;
 
-public class linked_list {
+public class Linked_list {
 
     Node head;
 
@@ -24,7 +24,7 @@ public class linked_list {
 
     public static void main(String[] args){
 
-        linked_list llist = new linked_list();
+        Linked_list llist = new Linked_list();
 
         llist.head = new Node(1);
         Node second = new Node(2);
