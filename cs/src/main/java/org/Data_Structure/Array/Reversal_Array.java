@@ -1,4 +1,4 @@
-package org.Array;
+package org.Data_Structure.Array;
 
 public class Reversal_Array {
 

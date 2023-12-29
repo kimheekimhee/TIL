@@ -1,4 +1,4 @@
-package org.Tree;
+package org.Data_Structure.Tree;
 
 public class Binary_Search_Tree {
     public class Node {

@@ -1,4 +1,4 @@
-package org.Tree;
+package org.Data_Structure.Tree;
 
 import java.util.*;
 

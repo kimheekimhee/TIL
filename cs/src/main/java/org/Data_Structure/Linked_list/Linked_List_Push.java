@@ -1,4 +1,4 @@
-package org.Linked_list;
+package org.Data_Structure.Linked_list;
 
 class Linked_List_Push
 {
